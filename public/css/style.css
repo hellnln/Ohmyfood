@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.header__logo {
+  justify-content: center;
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+  font-size: 20px;
+}
+.header__logo--menu {
+  position: relative;
+  left: -10px;
+}
+.header__backtoindex {
+  position: relative;
+  left: -80px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding: 15px;
+}
+.footer__titre {
+  justify-content: center;
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+}
+.footer__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer__list a {
+  color: white;
+}
+.footer__list li {
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 5px;
+}
+
+.reservation__button,
+.menu__BtnCommander {
+  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  border: 0;
+  color: white;
+  font-size: 13px;
+  box-shadow: 3px 3px 10px #B6B6B6;
+}
+.reservation__button:hover,
+.menu__BtnCommander:hover {
+  background: linear-gradient(#ff93e1, #a16be0);
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+}
+.reservation__search {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #e5e5e5;
+  padding: 10px;
+  box-shadow: inset 0px 3px 3px #B6B6B6;
+}
+.reservation__input {
+  background-color: #e5e5e5;
+  border: none;
+  text-align: center;
+}
+.reservation__input::placeholder {
+  color: black;
+}
+.reservation__explorer {
+  padding: 30px;
+  text-align: center;
+  background-color: #F2F2F2;
+}
+.reservation__explorer h1 {
+  font-size: 1.25rem;
+}
+.reservation__explorer p {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.index__titre {
+  font-size: 18px;
+}
+
+.fonctionnement {
+  padding: 20px;
+}
+.fonctionnement__block {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  border-radius: 15px;
+  margin: 20px 0 20px 0;
+  background: #F2F2F2;
+  font-size: 13px;
+  padding: 20px;
+  box-shadow: 3px 3px 10px #B6B6B6;
+}
+.fonctionnement__number {
+  position: absolute;
+  left: -10px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #9356DC;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 2px;
+}
+.fonctionnement__icon {
+  color: #4d4d4d;
+}
+.fonctionnement__text {
+  margin: 0;
+}
+
+.restaurant {
+  padding: 1.25rem;
+  background: #F2F2F2;
+}
+.restaurant__card {
+  border-radius: 15px;
+  height: auto;
+  margin: 1rem 0 1rem 0;
+  box-shadow: 3px 3px 10px #B6B6B6;
+}
+.restaurant__img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant__new {
+  background-color: #99E2D0;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  margin: 10px;
+  color: #278870;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  border-radius: 3px;
+}
+.restaurant__info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.restaurant__info h3 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+.restaurant__info p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  padding-top: 5px;
+}
+.restaurant__heart--color {
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  color: transparent;
+  border: none;
+}
+
+.menu__NomRestaurant h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+.menu__image {
+  width: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+@mixin img_ratio 
+{
+   width: 200px;
+}
+
+@mixin shadow-top {
+   box-shadow: inset 0px 3px 3px $color-shadow;
+}
+
+@mixin shadow-box {
+   box-shadow: 3px 3px 10px $color-shadow;
+}
+
+@mixin logo {
+   justify-content: center;
+   font-family: $font-titre;
+   margin: 0;
+}
+
+@mixin titre-index_h2 {
+   font-size: 18px;
+}
+
+@mixin titre-info-h3 {
+   font-size: 0.9rem;
+   margin: 0;
+}
+
+@mixin text-info {
+   font-size: 0.85rem;
+   font-weight: 300;
+   padding-top: 5px;
+}
+
+@mixin heart-color
+{
+   background: linear-gradient($color-primary,$color-secondary);
+   background-clip: text;
+   color: transparent;
+   border: none;
+}
+

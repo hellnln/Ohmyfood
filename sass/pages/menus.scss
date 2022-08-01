@@ -1,0 +1,15 @@
+.menu {
+    &__NomRestaurant {
+        h1 {
+            font-family: $font-titre;
+        }
+    }
+    
+}
+
+.menu__image {
+    @include img_ratio;
+}
+
+
+

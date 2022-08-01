@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+        
+        &__logo {
+            @include logo;
+            font-size: 20px;
+
+            &--menu {
+                position: relative;
+                left: -10px;
+            }
+        }
+
+        &__backtoindex {
+            position: relative;
+            left: -80px;
+        }
+}
+
+
+

@@ -1,0 +1,17 @@
+.reservation__button,
+.menu__BtnCommander {
+    border-radius: 50px;
+    background: linear-gradient($color-secondary, $color-primary);
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    border: 0;
+    color: lighten($color: $color-text, $amount: 100%);
+    font-size: 13px;
+
+    @include shadow-box;
+
+    &:hover{
+       background: linear-gradient(lighten($color-secondary,5%), lighten($color-primary,5%) );
+    }
+}
+

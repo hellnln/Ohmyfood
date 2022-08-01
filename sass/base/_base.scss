@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none; 
+    color: $color-text; 
+}
+
+body {
+    margin: 0;
+    font-family: $font-text;
+    font-size: $base-font-size;
+}
+
