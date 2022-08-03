@@ -6,12 +6,30 @@
     margin: 10px;
     border: 0;
     color: lighten($color: $color-text, $amount: 100%);
-    font-size: 13px;
-
+    font-size: 0.9rem;
     @include shadow-box;
-
+    position: relative;
+    z-index: 1;
     &:hover{
-       background: linear-gradient(lighten($color-secondary,5%), lighten($color-primary,5%) );
+       &::after {
+        opacity: 1;
+       }
     }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50px;
+        background: linear-gradient(lighten($color-secondary,5%), lighten($color-primary,5%) );
+        box-shadow: 3px 3px 10px darken($color: $color-shadow, $amount: 10%);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms; 
+    }
+
 }
 

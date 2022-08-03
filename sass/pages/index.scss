@@ -39,24 +39,38 @@
 }
 
 .index__titre {
-    @include titre-index-h2;
+    font-size: 18px;
 }
 
 .fonctionnement {
     padding: 20px;
 
+    &__main__block {
+        @include desktop {
+            justify-content: space-evenly;
+        };
+    }
+  
     &__block {
+        @include desktop {
+            width: 30%;
+        };
         display: flex;
         position: relative;
         justify-content: space-evenly;
         align-items: center;
-        margin: 0;
+        margin: 20px;
         border-radius: 15px;
-        margin: 20px 0 20px 0;
         background: $color-background;
         font-size: 13px;
         padding: 20px;
         @include shadow-box;
+        &:hover {
+            background-color: lighten($color: $color-primary, $amount: 35%);
+            .fonctionnement__icon {
+                color: $color-primary;
+            }
+        }
     }
 
     &__number {
@@ -86,7 +100,14 @@
     padding: 1.25rem;
     background: $color-background;
 
+    &__main__card {
+        @include desktop {
+            
+        };
+    }
+
     &__card {
+     
         border-radius: 15px;
         height: auto;
         margin: 1rem 0 1rem 0;
@@ -103,7 +124,6 @@
 
     &__new {
         background-color: $color-tertiary;
-        display: inline-block;
         position: absolute;
         right: 20px;
         margin: 10px;
@@ -131,14 +151,65 @@
         }
     }
 
-    &__heart--color {
-        @include heart-color;
-    }
-
-
-    
-    
-
-  
-   
 }
+    .restaurant-heart {
+        &__white {
+            position: relative;
+            z-index: 1;
+            opacity: 1;
+        
+        }
+
+        &__color {
+            position: relative;
+            left: -20px;
+            font-size: 16px;
+            background: -webkit-linear-gradient($color-secondary, $color-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            z-index: 1; 
+            transition: opacity 1s ease-in-out 0s;
+           
+         
+            }
+            &:hover {
+                & .restaurant-heart__color {
+                    opacity: 1;  
+                   
+                }
+                & .restaurant-heart__white {
+                    opacity: 0;
+                   
+                }
+         }
+        }
+
+
+// .jauge {
+  
+//     display: block;
+//     position: relative;
+// }
+
+
+// /* Remplissage de bas en haut */
+// .jauge-remplissage {
+//     transition: all 0.3s linear 0s;
+//     background: -webkit-linear-gradient($color-secondary, $color-primary);
+//     -webkit-background-clip: text;
+//     background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     width: 100%;
+//     height: 0;
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+// }
+ 
+// .jauge:hover .jauge-remplissage {
+//     height: 100%;
+// }
+
+        

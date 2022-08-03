@@ -8,24 +8,36 @@
 
     &__titre {
        @include logo;
+       @include desktop{
+        text-align: center
+       };
     }
 
     &__list {
         list-style-type: none;
         padding-left: 0;
 
-        a{
-            color: white; 
+        @include desktop{
+            justify-content: space-between;
+        };
+
+        a {
+            color: white;
         }
 
         li{
-            
             font-size: 0.9rem;
-            font-weight: 300;
             padding: 5px;
             
+        }  
+    }
+  
+    &__list--icon {
+        display: flex;
+        i {
+            height: 17px;
+            width: 25px;
         }
         
     }
-  
 }

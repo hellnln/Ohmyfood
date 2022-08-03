@@ -10,3 +10,8 @@ $base-font-size: 16px;
 
 $font-titre: 'Shrikhand',cursive;
 $font-text: 'Roboto', sans-serif;
+
+$breakpoints: (
+    mobile : 599px,
+    tablet : 768px
+);

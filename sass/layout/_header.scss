@@ -1,23 +1,16 @@
 .header {
     display: flex;
     justify-content: center;
+    position: relative;
+    align-items: center;
     padding: 10px;
         
         &__logo {
             @include logo;
             font-size: 20px;
+            margin: 0 auto 0 auto;
 
-            &--menu {
-                position: relative;
-                left: -10px;
-            }
-        }
-
-        &__backtoindex {
-            position: relative;
-            left: -80px;
-        }
 }
 
-
+}
 
