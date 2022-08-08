@@ -30,18 +30,11 @@
    margin: 0;
 }
 
-@mixin heart-color
-{
-   background: linear-gradient($color-primary,$color-secondary);
-   -webkit-background-clip: text;
-   color: transparent;
-   
-}
-
 @mixin tablet {
    @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet)) {
          display: flex;
          flex-wrap: wrap;
+         text-align: center;
          @content;
    }
 }
@@ -49,6 +42,7 @@
    @media screen and (min-width: map-get($breakpoints, tablet)) {
       display: flex;
       flex-direction: row;
+      text-align: center;
       @content;
    }
 }

@@ -8,9 +8,8 @@
 
     &__titre {
        @include logo;
-       @include desktop{
-        text-align: center
-       };
+       @include desktop;
+       @include tablet;
     }
 
     &__list {
@@ -20,6 +19,10 @@
         @include desktop{
             justify-content: space-between;
         };
+
+        @include tablet{
+            justify-content: space-between;
+        }
 
         a {
             color: white;
