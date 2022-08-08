@@ -5,6 +5,11 @@ $color-background: #F2F2F2;
 $color-shadow: #B6B6B6;
 $color-text: black;
 
+$num-menu: 3;
+$anim-duration: 1000ms;
+$anim-delay: calc($anim-duration / $num-menu);
+
+
 
 $base-font-size: 16px;
 

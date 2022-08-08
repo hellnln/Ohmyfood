@@ -41,7 +41,7 @@
 @mixin tablet {
    @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet)) {
          display: flex;
-         flex-direction: row;
+         flex-wrap: wrap;
          @content;
    }
 }
