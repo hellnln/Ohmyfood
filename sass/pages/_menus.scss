@@ -118,7 +118,7 @@
     align-items: center;
     width: 130px;
     margin-right: -90px;
-    transition: margin-right 2s ease-in-out;
+    transition: margin-right 1000ms ease-in-out;
     &:hover {
         margin-right: 0;
         .prix__icon {
@@ -148,7 +148,7 @@
     }
 
     &__icon {
-        transition: transform 500ms ease-in-out 400ms;
+        transition: all 800ms ease-in-out 100ms;
     }
 
 }

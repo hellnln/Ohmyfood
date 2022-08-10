@@ -556,7 +556,7 @@ body {
   align-items: center;
   width: 130px;
   margin-right: -90px;
-  transition: margin-right 2s ease-in-out;
+  transition: margin-right 1000ms ease-in-out;
 }
 .prix:hover {
   margin-right: 0;
@@ -585,7 +585,7 @@ body {
   color: white;
 }
 .prix__icon {
-  transition: transform 500ms ease-in-out 400ms;
+  transition: all 800ms ease-in-out 100ms;
 }
 
 /*# sourceMappingURL=style.css.map */
