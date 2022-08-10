@@ -99,7 +99,7 @@
             @include titre-info-h3;
             white-space: nowrap;
             overflow: hidden;
-        text-overflow: ellipsis;
+            text-overflow: ellipsis fade(100%);
             
         }
                
@@ -107,7 +107,7 @@
             @include text-info;
             white-space: nowrap;
             overflow: hidden;
-        text-overflow: ellipsis;
+            text-overflow: ellipsis;
         }   
     }    
 }
