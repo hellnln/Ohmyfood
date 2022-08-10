@@ -9,7 +9,7 @@
     opacity: 0.90;
     font-family: $font-titre;
     color: lighten($color-text, 50%);
-    animation: disappear 400ms linear 1 2s forwards;
+    animation: disappear 400ms linear 1 1500ms forwards;
 
     &::before {
         content: "";

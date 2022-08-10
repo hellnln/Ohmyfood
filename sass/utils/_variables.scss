@@ -4,15 +4,7 @@ $color-tertiary: #99E2D0;
 $color-background: #F2F2F2;
 $color-shadow: #B6B6B6;
 $color-text: black;
-
-$num-menu: 3;
-$anim-duration: 1000ms;
-$anim-delay: calc($anim-duration / $num-menu);
-
-
-
 $base-font-size: 16px;
-
 $font-titre: 'Shrikhand',cursive;
 $font-text: 'Roboto', sans-serif;
 
@@ -20,3 +12,7 @@ $breakpoints: (
     mobile : 599px,
     tablet : 768px
 );
+
+$num-menu: 4;
+$anim-duration: 1000ms;
+$anim-delay: calc($anim-duration / $num-menu);
