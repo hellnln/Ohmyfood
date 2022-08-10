@@ -1,5 +1,4 @@
 
-
 .menu {
     background-color: $color-background;
     overflow: hidden;
@@ -48,13 +47,13 @@
         justify-content: flex-end;
         @include desktop {
             justify-content: space-around;
-        }
-        
-        
+        } 
     }
 
 .plat {
     width: 100%;
+    overflow: hidden;
+       
     &__titre {
         text-transform: uppercase;
         border-bottom: 3px solid $color-tertiary;
@@ -64,8 +63,7 @@
         font-weight: 400;
         font-size: 1.125rem;
         animation: apparition-titre 2000ms ease-in-out 100ms both;
-        opacity: 0;
-                   
+        opacity: 0;           
     }
 
     &__box {
@@ -74,6 +72,7 @@
         width: 90%;
         background-color: white;
         overflow: hidden;
+        text-overflow: ellipsis;
         justify-content: space-between;
         border-radius: 15px;
         margin: 20px;
@@ -85,9 +84,7 @@
                 &--#{$i} {
                     animation-delay: $anim-delay * $i;
                 }
-            }
-           
-        
+            }   
     }
 
     &__info {
@@ -96,28 +93,20 @@
         justify-content: space-between; 
         padding: 15px;
         overflow: hidden;
-        width: 250px;
-        
-        
-        
-        
-
+        text-overflow: ellipsis;
+      
         & h3 {
             @include titre-info-h3;
             white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis;
-            width: 250px;
-            
+            text-overflow: ellipsis;  
         }
                
         & p {
             @include text-info;
             white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis;
-            width: 250px;
-            
+            text-overflow: ellipsis;  
         }   
     }    
 }
@@ -135,7 +124,6 @@
         .prix__icon {
             transform: rotate(360deg);
         }
-
     }
 
     &__valeur {
@@ -144,7 +132,6 @@
         width: 50px;
         font-weight: 700;
         padding: 30px 20px 0 0;
-       
     }
     
     &__circle {
@@ -152,7 +139,7 @@
         justify-content: center;
         align-items: center;
         font-size: 20px;
-        width: 80px;
+        width: 90px;
         height: 100%;
         background-color: $color-tertiary;
         border-top-right-radius: 15px;

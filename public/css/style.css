@@ -484,6 +484,7 @@ body {
 
 .plat {
   width: 100%;
+  overflow: hidden;
 }
 .plat__titre {
   text-transform: uppercase;
@@ -502,6 +503,7 @@ body {
   width: 90%;
   background-color: white;
   overflow: hidden;
+  text-overflow: ellipsis;
   justify-content: space-between;
   border-radius: 15px;
   margin: 20px;
@@ -528,7 +530,7 @@ body {
   justify-content: space-between;
   padding: 15px;
   overflow: hidden;
-  width: 250px;
+  text-overflow: ellipsis;
 }
 .plat__info h3 {
   font-size: 0.9rem;
@@ -536,7 +538,6 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 250px;
 }
 .plat__info p {
   font-size: 0.85rem;
@@ -546,7 +547,6 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 250px;
 }
 
 .prix {
@@ -577,7 +577,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  width: 80px;
+  width: 90px;
   height: 100%;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
