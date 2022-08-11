@@ -7,6 +7,7 @@
     border: 0;
     color: lighten($color: $color-text, $amount: 100%);
     font-size: 0.9rem;
+    cursor: pointer;
     @include shadow-box;
     position: relative;
     z-index: 1;
