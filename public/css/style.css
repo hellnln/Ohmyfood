@@ -178,7 +178,7 @@ body {
   opacity: 0.9;
   font-family: "Shrikhand", cursive;
   color: gray;
-  animation: disappear 400ms linear 1 1500ms forwards;
+  animation: disappear 2000ms linear forwards;
 }
 .loader::before {
   content: "";
@@ -408,9 +408,8 @@ body {
 
 .restaurant-heart__white {
   position: relative;
-  z-index: 1;
   opacity: 1;
-  transition: opacity 1s ease-in-out 0s;
+  transition: opacity 1s ease-in-out;
 }
 .restaurant-heart__color {
   position: relative;
@@ -421,8 +420,7 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
-  z-index: 1;
-  transition: opacity 1s ease-in-out 0s;
+  transition: opacity 1s ease-in-out;
 }
 .restaurant-heart:hover .restaurant-heart__color {
   opacity: 1;
@@ -509,10 +507,8 @@ body {
   justify-content: space-between;
   border-radius: 15px;
   margin: 20px;
-  transition: margin-right 800ms ease-in-out;
   box-shadow: 3px 3px 15px #B6B6B6;
-  animation: apparition 1000ms ease-in-out 100ms;
-  animation-fill-mode: both;
+  animation: apparition 1000ms ease-in-out 100ms forwards;
   opacity: 0;
 }
 .plat__box:hover .prix {

@@ -53,7 +53,7 @@
         @include desktop {
             justify-content: space-evenly;
         };
-        // @include tablet;
+        
     }
   
     &__block {
@@ -112,7 +112,6 @@
 
     &__main__card {
         display: flex;
-        // flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
         @include desktop {
@@ -190,9 +189,8 @@
     .restaurant-heart {
         &__white {
             position: relative;
-            z-index: 1;
             opacity: 1;
-            transition: opacity 1s ease-in-out 0s;
+            transition: opacity 1s ease-in-out;
         }
 
         &__color {
@@ -204,8 +202,7 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 0;
-            z-index: 1; 
-            transition: opacity 1s ease-in-out 0s;
+            transition: opacity 1s ease-in-out;
            
             }
             &:hover {
@@ -215,7 +212,7 @@
                 }
                 & .restaurant-heart__white {
                    opacity: 0;
-                }
+                  }
          }
         }
 

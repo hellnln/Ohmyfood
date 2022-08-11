@@ -77,19 +77,16 @@
         justify-content: space-between;
         border-radius: 15px;
         margin: 20px;
-        transition: margin-right 800ms ease-in-out;
         @include shadow-box;  
         &:hover {
             .prix{
                margin-right: 0; 
             }
-            
             .prix__icon {
                 transform: rotate(360deg);
             }
         }  
-            animation: apparition $anim-duration ease-in-out 100ms;
-            animation-fill-mode: both;
+            animation: apparition $anim-duration ease-in-out 100ms forwards;
             opacity: 0;
             @for $i from 1 through $num_menu {
                 &--#{$i} {
@@ -122,8 +119,6 @@
             text-overflow: ellipsis;  
         }   
     } 
-   
-   
 }
 
 .prix {
@@ -158,8 +153,6 @@
     &__icon {
         transition: transform 300ms linear 500ms;
     }
-    
-
 }
 
  
