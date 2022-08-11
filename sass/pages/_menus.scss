@@ -68,6 +68,7 @@
 
     &__box {
         display: flex;
+        cursor: pointer;
         flex-direction: row;
         width: 90%;
         background-color: white;
@@ -76,7 +77,17 @@
         justify-content: space-between;
         border-radius: 15px;
         margin: 20px;
-        @include shadow-box;   
+        transition: margin-right 800ms ease-in-out;
+        @include shadow-box;  
+        &:hover {
+            .prix{
+               margin-right: 0; 
+            }
+            
+            .prix__icon {
+                transform: rotate(360deg);
+            }
+        }  
             animation: apparition $anim-duration ease-in-out 100ms;
             animation-fill-mode: both;
             opacity: 0;
@@ -84,9 +95,11 @@
                 &--#{$i} {
                     animation-delay: $anim-delay * $i;
                 }
-            }   
-    }
-
+            }
+           
+        } 
+     
+    
     &__info {
         display: flex;
         flex-direction: column;
@@ -108,23 +121,19 @@
             overflow: hidden;
             text-overflow: ellipsis;  
         }   
-    }    
+    } 
+   
+   
 }
 
 .prix {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 130px;
-    margin-right: -90px;
-    transition: margin-right 1000ms ease-in-out;
-    &:hover {
-        margin-right: 0;
-        .prix__icon {
-            transform: rotate(360deg);
-        }
-    }
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 130px;
+        margin-right: -90px;
+        transition: margin-right 800ms ease-in-out;
 
     &__valeur {
         @include titre-info-h3;
@@ -146,10 +155,10 @@
         border-bottom-right-radius: 15px;
         color: white;  
     }
-
     &__icon {
-        transition: all 800ms ease-in-out 100ms;
+        transition: transform 300ms linear 500ms;
     }
+    
 
 }
 

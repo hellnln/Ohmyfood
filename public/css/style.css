@@ -500,6 +500,7 @@ body {
 }
 .plat__box {
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   width: 90%;
   background-color: white;
@@ -508,10 +509,17 @@ body {
   justify-content: space-between;
   border-radius: 15px;
   margin: 20px;
+  transition: margin-right 800ms ease-in-out;
   box-shadow: 3px 3px 15px #B6B6B6;
   animation: apparition 1000ms ease-in-out 100ms;
   animation-fill-mode: both;
   opacity: 0;
+}
+.plat__box:hover .prix {
+  margin-right: 0;
+}
+.plat__box:hover .prix__icon {
+  transform: rotate(360deg);
 }
 .plat__box--1 {
   animation-delay: 250ms;
@@ -557,13 +565,7 @@ body {
   align-items: center;
   width: 130px;
   margin-right: -90px;
-  transition: margin-right 1000ms ease-in-out;
-}
-.prix:hover {
-  margin-right: 0;
-}
-.prix:hover .prix__icon {
-  transform: rotate(360deg);
+  transition: margin-right 800ms ease-in-out;
 }
 .prix__valeur {
   font-size: 0.9rem;
@@ -586,7 +588,7 @@ body {
   color: white;
 }
 .prix__icon {
-  transition: all 800ms ease-in-out 100ms;
+  transition: transform 300ms linear 500ms;
 }
 
 /*# sourceMappingURL=style.css.map */
