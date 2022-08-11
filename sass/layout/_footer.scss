@@ -17,11 +17,11 @@
         padding-left: 0;
 
         @include desktop{
-            justify-content: space-between;
+            justify-content: space-around;
         };
 
         @include tablet{
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
         a {
